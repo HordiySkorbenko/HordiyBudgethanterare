@@ -28,33 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            labelDate = new Label();
+            DateButtonPrev = new Button();
+            DateButtonNext = new Button();
+            panel1 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // labelDate
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(641, 24);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            label1.Click += label1_Click;
+            labelDate.BackColor = Color.Violet;
+            labelDate.Dock = DockStyle.Fill;
+            labelDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelDate.Location = new Point(0, 0);
+            labelDate.Name = "labelDate";
+            labelDate.Size = new Size(1082, 98);
+            labelDate.TabIndex = 0;
+            labelDate.Text = "BLANK";
+            labelDate.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // DateButtonPrev
+            // 
+            DateButtonPrev.BackColor = Color.Transparent;
+            DateButtonPrev.Cursor = Cursors.Hand;
+            DateButtonPrev.FlatAppearance.BorderSize = 0;
+            DateButtonPrev.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+            DateButtonPrev.FlatStyle = FlatStyle.Flat;
+            DateButtonPrev.ForeColor = Color.Gray;
+            DateButtonPrev.Location = new Point(415, 25);
+            DateButtonPrev.Name = "DateButtonPrev";
+            DateButtonPrev.Size = new Size(50, 50);
+            DateButtonPrev.TabIndex = 1;
+            DateButtonPrev.Text = "◀ ";
+            DateButtonPrev.UseVisualStyleBackColor = false;
+            DateButtonPrev.Click += DateButtonPrev_Click;
+            // 
+            // DateButtonNext
+            // 
+            DateButtonNext.BackColor = Color.Transparent;
+            DateButtonNext.Cursor = Cursors.Hand;
+            DateButtonNext.FlatAppearance.BorderSize = 0;
+            DateButtonNext.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
+            DateButtonNext.FlatStyle = FlatStyle.Flat;
+            DateButtonNext.ForeColor = Color.Gray;
+            DateButtonNext.Location = new Point(616, 25);
+            DateButtonNext.Name = "DateButtonNext";
+            DateButtonNext.Size = new Size(50, 50);
+            DateButtonNext.TabIndex = 2;
+            DateButtonNext.Text = "▶ ";
+            DateButtonNext.UseVisualStyleBackColor = false;
+            DateButtonNext.Click += DateButtonNext_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Violet;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(DateButtonPrev);
+            panel1.Controls.Add(DateButtonNext);
+            panel1.Controls.Add(labelDate);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1084, 100);
+            panel1.TabIndex = 3;
+            panel1.Paint += panel1_Paint;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.AutoSize = true;
+            tableLayoutPanel1.ColumnCount = 3;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 100);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(1084, 581);
+            tableLayoutPanel1.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1309, 681);
-            Controls.Add(label1);
+            ClientSize = new Size(1084, 681);
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(panel1);
+            MinimumSize = new Size(900, 600);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label labelDate;
+        private Button DateButtonNext;
+        private Panel panel1;
+        public Button DateButtonPrev;
+        private TableLayoutPanel tableLayoutPanel1;
     }
 }
