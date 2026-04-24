@@ -28,24 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelDate = new Label();
             DateButtonPrev = new Button();
             DateButtonNext = new Button();
             panel1 = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            labelDate = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel2 = new Panel();
+            button1 = new Button();
+            panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // labelDate
-            // 
-            labelDate.BackColor = Color.Violet;
-            labelDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelDate.Location = new Point(0, 0);
-            labelDate.Name = "labelDate";
-            labelDate.Size = new Size(1315, 98);
-            labelDate.TabIndex = 0;
-            labelDate.Text = "BLANK";
-            labelDate.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DateButtonPrev
             // 
@@ -55,7 +52,7 @@
             DateButtonPrev.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
             DateButtonPrev.FlatStyle = FlatStyle.Flat;
             DateButtonPrev.ForeColor = Color.Gray;
-            DateButtonPrev.Location = new Point(509, 25);
+            DateButtonPrev.Location = new Point(241, 25);
             DateButtonPrev.Name = "DateButtonPrev";
             DateButtonPrev.Size = new Size(50, 50);
             DateButtonPrev.TabIndex = 1;
@@ -71,7 +68,7 @@
             DateButtonNext.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
             DateButtonNext.FlatStyle = FlatStyle.Flat;
             DateButtonNext.ForeColor = Color.Gray;
-            DateButtonNext.Location = new Point(761, 25);
+            DateButtonNext.Location = new Point(493, 25);
             DateButtonNext.Name = "DateButtonNext";
             DateButtonNext.Size = new Size(50, 50);
             DateButtonNext.TabIndex = 2;
@@ -86,50 +83,111 @@
             panel1.Controls.Add(DateButtonPrev);
             panel1.Controls.Add(DateButtonNext);
             panel1.Controls.Add(labelDate);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(498, 51);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1317, 100);
+            panel1.Size = new Size(816, 100);
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
-            // tableLayoutPanel1
+            // labelDate
             // 
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 300F));
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 100);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1317, 688);
-            tableLayoutPanel1.TabIndex = 4;
+            labelDate.BackColor = Color.Violet;
+            labelDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelDate.Location = new Point(249, 1);
+            labelDate.Name = "labelDate";
+            labelDate.Size = new Size(294, 98);
+            labelDate.TabIndex = 0;
+            labelDate.Text = "BLANK";
+            labelDate.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = SystemColors.ActiveCaptionText;
+            flowLayoutPanel1.Location = new Point(0, 51);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(267, 737);
+            flowLayoutPanel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(button1);
+            panel2.Location = new Point(353, 271);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 100);
+            panel2.TabIndex = 5;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(66, 52);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Black;
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(pictureBox1);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1317, 50);
+            panel3.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.Image = Properties.Resources.icons8_menu_48;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(65, 51);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(86, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(132, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Smart Budget hanterare";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1317, 788);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
             Controls.Add(panel1);
+            Controls.Add(flowLayoutPanel1);
             MinimumSize = new Size(900, 600);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label labelDate;
         private Button DateButtonNext;
         private Panel panel1;
         public Button DateButtonPrev;
-        private TableLayoutPanel tableLayoutPanel1;
+        private Label labelDate;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel2;
+        private Button button1;
+        private Panel panel3;
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }
