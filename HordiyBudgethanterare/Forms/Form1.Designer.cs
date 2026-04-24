@@ -39,11 +39,10 @@
             // labelDate
             // 
             labelDate.BackColor = Color.Violet;
-            labelDate.Dock = DockStyle.Fill;
             labelDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelDate.Location = new Point(0, 0);
             labelDate.Name = "labelDate";
-            labelDate.Size = new Size(1082, 98);
+            labelDate.Size = new Size(1315, 98);
             labelDate.TabIndex = 0;
             labelDate.Text = "BLANK";
             labelDate.TextAlign = ContentAlignment.MiddleCenter;
@@ -56,7 +55,7 @@
             DateButtonPrev.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
             DateButtonPrev.FlatStyle = FlatStyle.Flat;
             DateButtonPrev.ForeColor = Color.Gray;
-            DateButtonPrev.Location = new Point(415, 25);
+            DateButtonPrev.Location = new Point(509, 25);
             DateButtonPrev.Name = "DateButtonPrev";
             DateButtonPrev.Size = new Size(50, 50);
             DateButtonPrev.TabIndex = 1;
@@ -72,7 +71,7 @@
             DateButtonNext.FlatAppearance.MouseOverBackColor = Color.WhiteSmoke;
             DateButtonNext.FlatStyle = FlatStyle.Flat;
             DateButtonNext.ForeColor = Color.Gray;
-            DateButtonNext.Location = new Point(616, 25);
+            DateButtonNext.Location = new Point(761, 25);
             DateButtonNext.Name = "DateButtonNext";
             DateButtonNext.Size = new Size(50, 50);
             DateButtonNext.TabIndex = 2;
@@ -90,7 +89,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1084, 100);
+            panel1.Size = new Size(1317, 100);
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
@@ -106,14 +105,14 @@
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(1084, 581);
+            tableLayoutPanel1.Size = new Size(1317, 688);
             tableLayoutPanel1.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1084, 681);
+            ClientSize = new Size(1317, 788);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(panel1);
             MinimumSize = new Size(900, 600);

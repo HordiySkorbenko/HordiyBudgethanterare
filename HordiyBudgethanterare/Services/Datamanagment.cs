@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
+using HordiyBudgethanterare.Models;
 
-namespace HordiyBudgethanterare
+namespace HordiyBudgethanterare.Services
 {
    
     internal class Datamanagment
