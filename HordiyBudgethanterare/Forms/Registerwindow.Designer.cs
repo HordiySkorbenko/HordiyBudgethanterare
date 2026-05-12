@@ -72,6 +72,7 @@
             Loginbutton.TabIndex = 4;
             Loginbutton.Text = "Login";
             Loginbutton.UseVisualStyleBackColor = true;
+            Loginbutton.Click += Loginbutton_Click;
             // 
             // Registerbutton
             // 
@@ -103,7 +104,7 @@
             // 
             // UsernameTextbox
             // 
-            UsernameTextbox.Location = new Point(41, 100);
+            UsernameTextbox.Location = new Point(41, 101);
             UsernameTextbox.Multiline = true;
             UsernameTextbox.Name = "UsernameTextbox";
             UsernameTextbox.Size = new Size(531, 51);

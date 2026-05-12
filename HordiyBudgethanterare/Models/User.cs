@@ -11,6 +11,7 @@ namespace HordiyBudgethanterare.Models
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public BudgetData Budget { get; set; } = new BudgetData();
     }
 
 }

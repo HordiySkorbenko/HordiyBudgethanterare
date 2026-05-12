@@ -16,5 +16,20 @@ namespace HordiyBudgethanterare
         {
             InitializeComponent();
         }
+
+        
+
+        private void Loginbutton_Click(object sender, EventArgs e)
+        {
+            string username = UsernameTextbox.Text.Trim();
+            string password = PasswordTextBox.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Fyll i användarnamn och lösenord.");
+                return;
+            }
+
+        }
     }
 }

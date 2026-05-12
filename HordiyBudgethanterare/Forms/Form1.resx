@@ -117,4 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TransactionsButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAABJxJREFUaEPtmknof1MUwD/meZ5lZmFKFmwoyiyZk0gWJBbKtLIwLJQxJaxYmLKx
+        sDClyFjmWZmJkJAMmYU+dW69jvd9v/fue+8n+n/q9e/3P/fd+8695557zrlfWMH/l/WBE4GrgPuBd4Av
+        gV+AX4FvgLeAB4BrgWOBjXInU/Mc8Ez+zxZWA04BHgF+A/4a+PwBPAycBqyRO5+CMtAiVgcuBD5vtP0d
+        eAy4LFZmV2Cz+EAVdvZ3A44DLo22rlZ5/7Poc8082Bi6FDkKeK/R5jXgrEoz2TDefbHR3/vAkblhLW2K
+        OFM3AX+G7M0pBwSOAF5pjH3zFKuTFdkceCH+T3O4AFi1IZ+KVYDzgJ9iLMfcIjcaQlORHYB3429Nau/U
+        dg72Cq9XxtwxN+hLUWTTRofasSuzXLjnno6xPwC2zA36UBR5Nv59HlgvN1oG1ml8g2Y2eM8URcpsjLHT
+        ppnWsEnDKnQAg2gq0vU8lV9sYawi4p4pDkDv1pv8wYueJ/OLLUyhiJwf/bj5B5tYLYcCd4VZFkVeBi6v
+        PDhFd/9q9KVSs7I2cE/LyjWfT4A98os98QC2j0/nis0Kt8VAPwCXxAfreTYADolAVLkrpdJDWQl4Kfo4
+        NQun4vAY4PuOGXcWNTHbGR3UcHa8/1AWTEUxqYuyIGHYb7s+Hq8N95j5jdG2Kz05X8QHbpcFCT/Edl9n
+        wQAejz6OyYIpKLnFrJsw0Ps51jVZMAXmEXa+bxbMwPEx1n1ZMAXXRefGZWaGc6Izcay3s2AKNgY+angu
+        46IDZjI1o3LH+SoLRIHPGLYCHmz05WOM9Gjk6fsBK+eXKnBy7Nt9+Q+mUKSwD3A98HojNS7Ph8AZcbjV
+        0qnIXGgGJwA3RGhRFLpzhDKdpmUooU3PmUAZ+FnD+jY+5MzcoCedm/2JEE5ZGVmEyjiW2V8Nne73yqhR
+        HZ0FM2B51Q9xZWqY9UDUXu1cN7wUnjO2/S4LelKsZ+Gk7w/cCqybBT2wBGrnp2dBCydHWw/PoThRJWi0
+        UtlK0dQy5lB0qb5rDXf7LGywE/BxtLUYN5Rz4l2r+guxwGzJf+cs6IEHXVkVrxAuBvYMb+gKHxhXDpqT
+        bUyyLG4PQXdd8pleidVaMXNDMT/wbsSBup57K3MJC+i+b7rsjUAnu0fMZEG5tr5rtnh3S9X+xtiHNfgt
+        9tHbJF0Nw4g3gG2zsIKiyFi8O7Efi3VLrkZhl7BfbXJsSD6FIhbOf4647bAsXAoDszvCPIxtahmriBNZ
+        TNR4bTCWaywc/wgclIXLhN7O+0yV0MtVVxi3jpBcVGbMygzFlShKmEZPcqWhMq7MWDPri3uimJObe6nK
+        TG/M/LzouT0cwDZxTTY1uli9kxu7mNOYK41W3DO6Pb2ZrtlzpubQbMPJ8bAr54TeyZy/t5utQdfsOeNT
+        IgBjs5pA0wDQ2KmEHWU/HJwbzoUKGAGIOYEfcEv8bWhtctbMNJ1Zb56MvUx7/VGBAapRbFHAHx+cO/cq
+        dGGg6YWPFRIp5mGQ6D4qH9r2WDywGH3Sv6nAIq6O2TbqbSpi4uWPDAy/r4gf1dSY4wr+E/wNfT5w6BF7
+        WsEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="AccountsTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="SideBarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>173, 17</value>
+  </metadata>
 </root>

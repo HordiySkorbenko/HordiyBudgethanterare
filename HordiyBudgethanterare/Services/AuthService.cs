@@ -30,9 +30,45 @@ namespace HordiyBudgethanterare.Services
             return JsonConvert.DeserializeObject<List<User>>(data.record.users.ToString());
         }
 
-        public bool login(string username, string password)
+        public async Task<User?> Login(string username, string password)
         {
+            var users = await GetUsers();
+            return users.FirstOrDefault(u =>
+                u.Username == username && u.Password == password);
+        }
+        public async Task<bool> Register(string username, string password)
+        {
+            var users = await GetUsers();
+            if (users.Any(u => u.Username == username))
+                return false; // юзер вже існує
 
+            var newUser = new User
+            {
+                Id = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1,
+                Username = username,
+                Password = password
+            };
+            users.Add(newUser);
+            await SaveUsers(users);
+            return true;
+        }
+
+        public async Task SaveBudget(User user)
+        {
+            var users = await GetUsers();
+            var index = users.FindIndex(u => u.Id == user.Id);
+            if (index >= 0)
+            {
+                users[index] = user;
+                await SaveUsers(users);
+            }
+        }
+
+        private async Task SaveUsers(List<User> users)
+        {
+            var body = JsonConvert.SerializeObject(new { users });
+            var content = new StringContent(body, Encoding.UTF8, "application/json");
+            await client.PutAsync(url, content);
         }
 
     }
