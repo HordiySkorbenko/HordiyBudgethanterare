@@ -55,7 +55,7 @@ namespace HordiyBudgethanterare
             if (SidebarExpand)
             {
                 SidebarPanel.Width -= 10;
-                PanelChildForms.Left -= 10;  
+                PanelChildForms.Left -= 10;
                 PanelChildForms.Width += 10;
                 if (SidebarPanel.Width <= 70)
                 {
@@ -132,7 +132,7 @@ namespace HordiyBudgethanterare
                 PanelChildForms.Controls.Add(accountsCash);
                 accountsCash.BringToFront();
                 accountsCash.Show();
-                
+
             }
             else
             {
@@ -153,7 +153,7 @@ namespace HordiyBudgethanterare
                 PanelChildForms.Controls.Add((accountsCard));
                 accountsCard.BringToFront();
                 accountsCard.Show();
-               
+
             }
             else
             {
@@ -169,7 +169,7 @@ namespace HordiyBudgethanterare
                 transactions.TopLevel = false;
                 transactions.FormBorderStyle = FormBorderStyle.None;
                 transactions.Dock = DockStyle.Fill;
-                PanelChildForms.Controls.Add((transactions));  
+                PanelChildForms.Controls.Add((transactions));
                 transactions.BringToFront();
                 transactions.Show();
             }
@@ -190,9 +190,9 @@ namespace HordiyBudgethanterare
                 PanelChildForms.Controls.Add((statistics));
                 statistics.BringToFront();
                 statistics.Show();
-                
+
             }
-            else 
+            else
             {
                 ShowChildForm(statistics);
             }

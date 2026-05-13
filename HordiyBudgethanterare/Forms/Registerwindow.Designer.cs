@@ -83,6 +83,7 @@
             Registerbutton.TabIndex = 3;
             Registerbutton.Text = "Register";
             Registerbutton.UseVisualStyleBackColor = true;
+            Registerbutton.Click += Registerbutton_Click;
             // 
             // PasswordTextBox
             // 

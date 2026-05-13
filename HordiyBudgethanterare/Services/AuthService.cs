@@ -40,7 +40,7 @@ namespace HordiyBudgethanterare.Services
         {
             var users = await GetUsers();
             if (users.Any(u => u.Username == username))
-                return false; // юзер вже існує
+                return false;
 
             var newUser = new User
             {

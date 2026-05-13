@@ -12,7 +12,7 @@ namespace HordiyBudgethanterare.Models
     {
         public string id { get; set; } = Guid.NewGuid().ToString();
         public string Name { get; set; } = "";
-        public bool IsFixed { get; set; } = false;
+        public bool IsFixed { get; set; } = false; // Fast utgift eller inte (ex. Hyra är fast) 
         public Dictionary<string, decimal?> MonthlyAmounts { get; set; } = new();
     }
     public class BudgetData
